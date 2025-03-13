@@ -1,0 +1,113 @@
+button{
+
+    background: rgb(118, 118, 223);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.showcase, img{
+    width:10rem;
+    height: 3rem;
+}
+.hero{
+    display:flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    justify-self: center;
+}
+
+.hero-btns{
+   display: flex;
+   gap: 2%;
+    border: 1px red solid;
+    width: 100%;
+}
+.hero, h1{
+    width: 80%;
+    line-height: 1.5rem;
+    text-align: left;
+}
+.hero p{
+    text-align: left;
+    border: 1px red solid;
+
+}
+.hero-img img{
+    width: 500px;
+    height: 470px;
+}
+.hero-btns{
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    justify-self: flex-start;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.products-and-services{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.products-heading{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.msituni, .water-cube, .re-gen-print{
+    text-align: left;
+    border: 1px red solid;
+    border-radius: 20px;
+    padding: 2%;
+    width: 30%;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.banking, .mobile, .communications, .government ,.others{
+    border: 1px red solid;
+    border-radius: 20px;
+}
+.feature{
+    display:flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    justify-self: center;
+    border: 1px red solid;
+}
+.feature-img img{
+    width: 500px;
+    height: 470px;
+    border: 1px red solid;
+}
+.feature h2{
+    width: 80%;
+    line-height: 1.5rem;
+    text-align: left;
+}
+.feature p{
+    text-align: left;
+    border: 1px red solid;
+} 
