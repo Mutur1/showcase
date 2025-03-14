@@ -29,6 +29,13 @@
   src: url("assets/fonts/OktaNeue-Bold.woff") format("woff");
   font-weight: 700;
 }
+:root {
+  --primary-blue: #007bff;
+  --light-blue: #e6f0fa;
+  --dark-gray: #333;
+  --medium-gray: #777;
+  --light-gray: #e0e0e0;
+}
 
 body {
   font-family: "Okta Neue", sans-serif !important;
@@ -140,17 +147,10 @@ h1 {
   width: 30%;
   border: 1px solid #4697f1;
 }
-:root {
-  --primary-blue: #007bff;
-  --light-blue: #e6f0fa;
-  --dark-gray: #333;
-  --medium-gray: #777;
-  --light-gray: #e0e0e0;
-}
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
 }
 
 .Browse {
@@ -193,7 +193,7 @@ h1 {
 
 .Browse .categories-container {
   position: relative;
-  width: 1048px;
+  /* width: 1048px; */
   overflow-x: scroll;
   margin-top: 2rem;
 }
@@ -205,27 +205,29 @@ h1 {
 }
 
 .Browse .category {
-  width: 250px;
   border: 1px solid var(--light-gray);
   border-radius: 20px;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
   box-shadow: 0 2px 4px 0 #0000001a;
 }
 
 .Browse .icon {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background-color: var(--light-blue);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .Browse .icon img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .Browse .category h3 {
