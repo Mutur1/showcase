@@ -10,7 +10,8 @@
   <body>
     <nav>
       <div class="showcase">
-        <img src="assets/img/Showcase.png" alt="Showcase" />
+        <!-- <img src="assets/img/Showcase.png" alt="Showcase" /> -->
+        <h2>Tangaza</h2>
       </div>
       <div><button>Discover Products</button></div>
     </nav>
@@ -18,7 +19,7 @@
       <div class="hero">
         <div class="hero-cta">
           <div class="hero-cnt">
-            <h1>Showcase:Where innovation meets visibility</h1>
+            <h1>Tangaza :Where innovation meets visibility</h1>
             <p>
               Welcome to Showcase, the ultimate platform for organizations to
               exhibit their products. Explore a world of innovation, creativity,
@@ -82,8 +83,8 @@
     <div class="container">
       <section class="Browse">
         <div class="header">
-          <h2>Browse by category</h2>
-          <p>Categorical Grouping of the Government Institutions</p>
+          <h2>Browse Innovations by category</h2>
+          <p>Categorical Grouping of the Government | Private Innovations</p>
           <button class="view-all">
             <img src="assets/img/gok.png" alt="Grid Icon" /> View ALL
             Innovations
@@ -159,6 +160,44 @@
         />
       </div>
     </div>
+    <div class="tweets">
+      <style>
+        #tweet {
+          width: 350px !important;
+          height: 400px !important;
+        }
+        #tweet iframe {
+          border: none !important;
+          box-shadow: none !important;
+        }
+      </style>
+
+      <div id="tweet" tweetID="1900394161318068387"></div>
+      <!-- <div id="tweet" tweetID="1899148893624897636"></div> -->
+      <script sync src="https://platform.twitter.com/widgets.js"></script>
+
+      <script>
+        window.onload = function () {
+          var tweet = document.getElementById("tweet");
+          var id = tweet.getAttribute("tweetID");
+
+          twttr.widgets
+            .createTweet(id, tweet, {
+              conversation: "none",
+              cards: "hidden",
+              linkColor: "#cc0000",
+              theme: "light",
+            })
+            .then(function (el) {
+              el.contentDocument.querySelector(".footer").style.display =
+                "none";
+            });
+        };
+      </script>
+      <img src="assets/img/tweet3.png" alt="" />
+      <img src="assets/img/tweet.png" alt="" />
+    </div>
+
     <footer>
       <div class="footer-img">
         <img src="assets/img/Showcase.png" alt="Showcase" />
