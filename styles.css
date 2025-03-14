@@ -1,113 +1,393 @@
-button{
-
-    background: rgb(118, 118, 223);
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    min-width: 120px;
-    cursor: pointer;
+/* You can add global styles to this file, and also import other style files */
+/*Project Fonts*/
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Normal.woff") format("woff");
+  font-weight: 300;
 }
 
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-.showcase, img{
-    width:10rem;
-    height: 3rem;
-}
-.hero{
-    display:flex;
-    flex-direction: row;
-    justify-items: space-between;
-    align-items: center;
-    justify-self: center;
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Regular.woff") format("woff");
+  font-weight: normal;
 }
 
-.hero-btns{
-   display: flex;
-   gap: 2%;
-    border: 1px red solid;
-    width: 100%;
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Medium.woff") format("woff");
+  font-weight: 500;
 }
-.hero, h1{
-    width: 80%;
-    line-height: 1.5rem;
-    text-align: left;
-}
-.hero p{
-    text-align: left;
-    border: 1px red solid;
 
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-SemiBold.woff") format("woff");
+  font-weight: 600;
 }
-.hero-img img{
-    width: 500px;
-    height: 470px;
+
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Bold.woff") format("woff");
+  font-weight: 700;
 }
-.hero-btns{
-    display: flex;
-    flex-direction: row;
-    align-self: end;
-    justify-self: flex-start;
-    justify-content: space-between;
-    margin-top: 3rem;
+:root {
+  --primary-blue: #007bff;
+  --light-blue: #e6f0fa;
+  --dark-gray: #333;
+  --medium-gray: #777;
+  --light-gray: #e0e0e0;
 }
-.products-and-services{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+
+body {
+  font-family: "Okta Neue", sans-serif !important;
+  font-weight: normal;
+  margin: 3%;
 }
-.products-heading{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  min-width: 150px;
+  cursor: pointer;
+  border: none;
+  background: #4697f1;
 }
-.products{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
-.msituni, .water-cube, .re-gen-print{
-    text-align: left;
-    border: 1px red solid;
-    border-radius: 20px;
-    padding: 2%;
-    width: 30%;
+.showcase,
+img {
+  width: 10rem;
+  height: 3rem;
 }
-.categories{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
 }
-.banking, .mobile, .communications, .government ,.others{
-    border: 1px red solid;
-    border-radius: 20px;
+
+.btn-1 {
+  background: linear-gradient(to right, #a87bff, #7d4dff);
+  color: white;
+  min-width: 200px;
 }
-.feature{
-    display:flex;
-    flex-direction: row;
-    justify-items: space-between;
-    align-items: center;
-    justify-self: center;
-    border: 1px red solid;
+
+.btn-2 {
+  background: linear-gradient(to right, #6b8e23, #daa520);
+  color: white;
+  min-width: 200px;
 }
-.feature-img img{
-    width: 500px;
-    height: 470px;
-    border: 1px red solid;
+
+.btn-div {
+  min-width: 120px;
 }
-.feature h2{
-    width: 80%;
-    line-height: 1.5rem;
-    text-align: left;
+
+.hero-btns button {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
-.feature p{
-    text-align: left;
-    border: 1px red solid;
-} 
+
+button span.icon {
+  margin-right: 0.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.hero,
+h1 {
+  line-height: 1.5rem;
+  text-align: left;
+}
+.hero-cnt {
+  min-width: 25%;
+}
+
+.hero p {
+  text-align: left;
+}
+.hero-img img {
+  width: 500px;
+  height: 470px;
+}
+
+.products-and-services {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.products-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.msituni,
+.water-cube,
+.re-gen-print {
+  text-align: left;
+  border-radius: 20px;
+  padding: 2%;
+  width: 30%;
+  border: 1px solid #4697f1;
+}
+
+.container {
+  width: 100%;
+  /* margin: auto; */
+}
+
+.Browse {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.Browse .header {
+  text-align: center;
+}
+
+.Browse h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.Browse p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.Browse .view-all {
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Browse .view-all img {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+}
+
+.Browse .categories-container {
+  position: relative;
+  /* width: 1048px; */
+  overflow-x: scroll;
+  margin-top: 2rem;
+}
+
+.Browse .categories {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.Browse .category {
+  border: 1px solid var(--light-gray);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px 0 #0000001a;
+}
+
+.Browse .icon {
+  width: 55px;
+  height: 55px;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+}
+
+.Browse .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.Browse .category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.Browse .category p {
+  font-size: 14px;
+  color: var(--medium-gray);
+  margin-bottom: 1rem;
+}
+
+.Browse .services {
+  font-size: 12px;
+  color: var(--primary-blue);
+}
+
+.Browse .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 #0000001a;
+  cursor: pointer;
+}
+
+.Browse .arrow.left {
+  left: -15px;
+}
+
+.Browse .arrow.right {
+  right: -15px;
+}
+
+.Browse .arrow.left::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent var(--primary-blue) transparent transparent;
+}
+
+.Browse .arrow.right::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent var(--primary-blue);
+}
+
+.Browse .paginations {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.Browse .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+
+.Browse .dot.active {
+  background-color: var(--primary-blue);
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  align-items: center;
+  justify-self: center;
+}
+.feature-img img {
+  width: 500px;
+  height: 470px;
+}
+.feature h2 {
+  width: 80%;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.feature p {
+  text-align: left;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  font-size: 14px;
+  color: #666;
+}
+
+footer > div:not(.copyright) {
+  padding: 1rem;
+}
+
+.copyright {
+  grid-column: 1 / span 4;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-img {
+  text-align: center;
+}
+
+.footer-img img {
+  max-width: 100%;
+}
+
+.footer-img p {
+  margin-top: 1rem;
+}
+
+.contacts ul,
+.quicklinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li,
+.quicklinks li {
+  margin-bottom: 0.5rem;
+}
+
+.contacts a,
+.quicklinks a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contacts a:hover,
+.quicklinks a:hover {
+  text-decoration: underline;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia a {
+  margin-right: 1rem;
+}
+
+.socialmedia img {
+  width: 30px;
+}
