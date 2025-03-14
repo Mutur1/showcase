@@ -159,6 +159,43 @@
         />
       </div>
     </div>
+    <div class="tweets">
+      <style>
+        #tweet {
+          width: 350px !important;
+          height: 400px !important;
+        }
+        #tweet iframe {
+          border: none !important;
+          box-shadow: none !important;
+        }
+      </style>
+
+      <div id="tweet" tweetID="1897607368789074128"></div>
+      <script sync src="https://platform.twitter.com/widgets.js"></script>
+
+      <script>
+        window.onload = function () {
+          var tweet = document.getElementById("tweet");
+          var id = tweet.getAttribute("tweetID");
+
+          twttr.widgets
+            .createTweet(id, tweet, {
+              conversation: "none",
+              cards: "hidden",
+              linkColor: "#cc0000",
+              theme: "light",
+            })
+            .then(function (el) {
+              el.contentDocument.querySelector(".footer").style.display =
+                "none";
+            });
+        };
+      </script>
+      <img src="assets/img/tweets.png" alt="" />
+      <img src="assets/img/tweets.png" alt="" />
+    </div>
+
     <footer>
       <div class="footer-img">
         <img src="assets/img/Showcase.png" alt="Showcase" />
