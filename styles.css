@@ -40,7 +40,7 @@
 body {
   font-family: "Okta Neue", sans-serif !important;
   font-weight: normal;
-  margin: 3%;
+  margin: 0 3%;
 }
 
 button {
@@ -334,8 +334,8 @@ h1 {
   justify-content: space-between;
 }
 .tweets img {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
 }
 
 footer {
