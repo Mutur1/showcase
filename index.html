@@ -1,122 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShowCase</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="showcase"><img src="img/Showcase.png" alt="Showcase"></div>
-        <div><button>Discover Products</button></div>
+      <div class="showcase">
+        <img src="assets/img/Showcase.png" alt="Showcase" />
+      </div>
+      <div><button>Discover Products</button></div>
     </nav>
-    <section>
-        <div class="hero">
-            <div class="hero-cnt">
-                <h1>Showcase:Where innovation meets visibility</h1>
-                <p>Welcome to Showcase, the ultimate platform for organizations to exhibit their products. Explore a
-                    world
-                    of
-                    innovation, creativity, and market potential. Join us in revolutionizing the way companies present
-                    their
-                    offerings.</p>
+    <section class="landing">
+      <div class="hero">
+        <div class="hero-cta">
+          <div class="hero-cnt">
+            <h1>Showcase:Where innovation meets visibility</h1>
+            <p>
+              Welcome to Showcase, the ultimate platform for organizations to
+              exhibit their products. Explore a world of innovation, creativity,
+              and market potential. Join us in revolutionizing the way companies
+              present their offerings.
+            </p>
+          </div>
+          <div class="hero-btns">
+            <div class="btn-div">
+              <button class="btn-1">
+                <span class="icon">🔍</span>
+                <span class="text">Browse collection</span>
+              </button>
             </div>
-            <div class="hero-btns">
-                <div><button class="btn-1">Browse collection</button></div>
-                <div><button class="btn-2">Start listing</button></div>
+            <div class="btn-div">
+              <button class="btn-2">
+                <span class="icon">></span>
+                <span class="text">Start Listing For Free</span>
+              </button>
             </div>
-            <div class="hero-img"><img
-                    src="img/platform-startup-company-is-launching-a-rocket-6284810-5227903.webp         "
-                    alt="picture"></div>
+          </div>
         </div>
+
+        <div class="hero-img">
+          <img
+            src="assets/img/platform-startup-company-is-launching-a-rocket-6284810-5227903.webp         "
+            alt="picture"
+          />
+        </div>
+      </div>
     </section>
     <div class="products-and-services">
-        <div class="products-heading">
-            <h2>Featured Products</h2>
-            <button>View all products</button>
+      <div class="products-heading">
+        <h2>Featured Products</h2>
+        <button>View all products</button>
+      </div>
+      <div class="products">
+        <div class="msituni">
+          <img src="assets/img/msituni.png" alt="msitu" />
+          <p>
+            A blockchain powered, multi stakeholder with both a web and mobile
+            to monitor afforestation ,reaforestation and deforestation for a
+            sustainable green economy.
+          </p>
+          <a href="https://okomojacob.github.io/msituni" target="_blank"
+            ><button class="products-btn">Discover Msituni</button></a
+          >
         </div>
-        <div class="products">
-            <div class="msituni">
-                <img src="img/msituni.png" alt="msitu">
-                <p>A blockchain powered, multi stakeholder with both a web and mobile to monitor afforestation
-                    ,reaforestation and deforestation for a sustainable green economy.</p>
-                <a href="https://okomojacob.github.io/msituni" target="_blank"><button class="products-btn">Discover Msituni</button></a>
-            </div>
-            <div class="water-cube">
-                <img src="img/waterCube.png" alt="water-cube">
-                <p>Compact device that extracts drinkable water from air.</p>
-                <button class="products-btn">Watercube</button>
-            </div>
-            <div class="re-gen-print">
-                <img src="img/regenPrint.png" alt="re-gen-print">
-                <p>3D printing system that turns plastic waste into new products.</p>
-                <button class="products-btn">Discover ReGenPrint</button>
-            </div>
+        <div class="water-cube">
+          <img src="assets/img/waterCube.png" alt="water-cube" />
+          <p>Compact device that extracts drinkable water from air.</p>
+          <button class="products-btn">Watercube</button>
         </div>
+        <div class="re-gen-print">
+          <img src="assets/img/regenPrint.png" alt="re-gen-print" />
+          <p>3D printing system that turns plastic waste into new products.</p>
+          <button class="products-btn">Discover ReGenPrint</button>
+        </div>
+      </div>
     </div>
-    <section class="Browse">
-        <h2>Browse by category</h2>
-        <div class="categories">
-            <div class="banking">
-                <h3>Banking and finance</h3>
-                <button>Services available</button>
-
-            </div>
-            <div class="mobile">
-                <h3>Mobile money</h3>
-                <button>Services available</button>
-            </div>
-            <div class="communications">
-                <h3>Communications</h3>
-                <button>Services available</button>
-            </div>
-            <div class="government">
-                <h3>Government services</h3>
-                <button>Services available</button>
-            </div>
-            <div class="others">
-                <h3>others</h3>
-                <button>Services available</button>
-            </div>
+    <div class="container">
+      <section class="Browse">
+        <div class="header">
+          <h2>Browse by category</h2>
+          <p>Grouping of the API's Based on Business Needs</p>
+          <button class="view-all">
+            <img src="assets/img/gok.png" alt="Grid Icon" /> View ALL Products
+          </button>
         </div>
-    </section>
+        <div class="categories-container">
+          <div class="arrow left"></div>
+          <div class="categories">
+            <div class="banking category">
+              <div class="icon">
+                <img src="assets/img/gok.png" alt="Banking Icon" />
+              </div>
+              <h3>Banking and finance</h3>
+              <p>Financial solutions for banking and finance needs.</p>
+              <span class="services">1 services available</span>
+            </div>
+            <div class="mobile category">
+              <div class="icon">
+                <img src="assets/img/nbo-logo.png" alt="Mobile Money Icon" />
+              </div>
+              <h3>Mobile money</h3>
+              <p>Mobile-based financial services for easy transactions.</p>
+              <span class="services">2 services available</span>
+            </div>
+            <div class="communications category">
+              <div class="icon">
+                <img src="assets/img/gok.png" alt="Communications Icon" />
+              </div>
+              <h3>Communications</h3>
+              <p>Services for efficient communication and networking.</p>
+              <span class="services">3 services available</span>
+            </div>
+            <div class="government category">
+              <div class="icon">
+                <img src="assets/img/gok.png" alt="Government Services Icon" />
+              </div>
+              <h3>Government services</h3>
+              <p>
+                Digital solutions for efficient government service delivery and
+                management.
+              </p>
+              <span class="services">4 services available</span>
+            </div>
+            <div class="others category">
+              <div class="icon">
+                <img src="assets/img/gok.png" alt="Others Icon" />
+              </div>
+              <h3>others</h3>
+              <p>Additional services that don't fit into other categories.</p>
+              <span class="services">5 services available</span>
+            </div>
+          </div>
+          <div class="arrow right"></div>
+        </div>
+        <div class="paginations">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+    </div>
     <div class="feature">
+      <div class="feature-cta">
         <h2>Want to feature your products and services?</h2>
-        <p>Join and collerborate with other innovative companies using our platform to reach thousands </p>
-        <div class="feature-btn"><button>Add your integration service</button></div>
-        <div class="feature-img"><img src="img/platform-partners-12006858-9801181.webp" alt="pic"></div>
+        <p>
+          Join and collerborate with other innovative companies using our
+          platform to reach thousands
+        </p>
+        <div class="feature-btn">
+          <button>Add your integration service</button>
+        </div>
+      </div>
+      <div class="feature-img">
+        <img
+          src="assets/img/platform-partners-12006858-9801181.webp"
+          alt="pic"
+        />
+      </div>
     </div>
-</body>
-<footer>
-    <div class="footer-img"> <img src="img/Showcase.png" alt="Showcase">
-    <p>Where innovation meets visibility</p></div>
-    
-    <div class="contacts">
+    <footer>
+      <div class="footer-img">
+        <img src="assets/img/Showcase.png" alt="Showcase" />
+        <p>Where innovation meets visibility</p>
+      </div>
+      <div class="contacts">
         <ul>
-            <li><a href="#">contact@showcase.com</a></li>
-            <li><a href="#">+1 (234) 567-890</a></li>
-            <li>123 Showcase St., City, Country</li>
+          <li>
+            <a href="mailto:contact@showcase.com">contact@showcase.ke</a>
+          </li>
+          <li><a href="tel:+1234567890">+254705 067-890</a></li>
+          <li>Showcase ASK, Dome Country</li>
         </ul>
-    </div>
-    <div class="quicklinks">
+      </div>
+      <div class="quicklinks">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
         </ul>
-    </div>
-    <div class="socialmedia">
-        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-    </div>
-    <div>
+      </div>
+      <div class="socialmedia">
+        <a href="#"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="assets/img/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="assets/img/twitter.svg" alt="Twitter" /></a>
+      </div>
+      <div class="copyright">
         <p>© 2025 Showcase All Rights Reserved</p>
-    </div>
-</footer>
-
+      </div>
+    </footer>
+  </body>
 </html>
